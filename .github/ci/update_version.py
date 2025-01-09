@@ -12,3 +12,5 @@ if ver.endswith(("a", "b")):
     print(data)
     with path.open("w") as f:
         json.dump(data, f, indent=4) 
+else:
+    raise ValueError("Not alpha or beta")

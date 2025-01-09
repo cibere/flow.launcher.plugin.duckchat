@@ -18,6 +18,11 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ env.python_ver }}
+      
+      - name: Update Version
+        id: update_version
+        run: |
+          python .github/ci/update_version.py ${{ github.sha }}
 
       - name: get version
         id: version
@@ -35,7 +40,6 @@ jobs:
           zip -r ${{ github.event.repository.name }}.zip . -x '*.git*'
 
       - name: Publish
-        if: success()
         uses: softprops/action-gh-release@v2
         with:
           files: '${{ github.event.repository.name }}.zip'
