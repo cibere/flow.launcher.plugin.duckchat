@@ -38,5 +38,5 @@ except ModuleNotFoundError:
         stderr=subprocess.DEVNULL,
     )
 
-from .plugin import DuckChatPlugin
+from plugin import DuckChatPlugin
 DuckChatPlugin().run()
