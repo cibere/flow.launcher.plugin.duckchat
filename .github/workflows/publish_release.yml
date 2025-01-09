@@ -19,11 +19,6 @@ jobs:
         with:
           python-version: ${{ env.python_ver }}
       
-      - name: Update Version
-        id: update_version
-        run: |
-          python .github/ci/update_version.py ${{ github.sha }}
-
       - name: get version
         id: version
         uses: notiz-dev/github-action-json-property@release
@@ -44,4 +39,3 @@ jobs:
         with:
           files: '${{ github.event.repository.name }}.zip'
           tag_name: "v${{steps.version.outputs.prop}}"
-          prerelease: true
