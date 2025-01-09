@@ -1,7 +1,7 @@
 name: Publish and Release
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   publish:
@@ -40,3 +40,4 @@ jobs:
         with:
           files: '${{ github.event.repository.name }}.zip'
           tag_name: "v${{steps.version.outputs.prop}}"
+          prerelease: true
