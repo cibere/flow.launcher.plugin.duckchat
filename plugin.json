@@ -1,0 +1,12 @@
+{
+    "ID": "efc15a5f-4eb2-4036-a5be-75fd3fe47639",
+    "ActionKeyword": "dc",
+    "Name": "DuckChat",
+    "Description": "a wrapper around duckduckgo's ai chat",
+    "Author": "cibere",
+    "Version": "0.0.1",
+    "Language": "python_v2",
+    "Website": "https://github.com/author/Flow.Launcher.Plugin.DuckChat",
+    "IcoPath": "Images/app.png",
+    "ExecuteFileName": "main.py"
+}

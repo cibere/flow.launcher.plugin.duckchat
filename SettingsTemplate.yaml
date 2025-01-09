@@ -1,0 +1,11 @@
+body:
+  - type: dropdown
+    attributes:
+      name: model
+      label: AI Model
+      defaultValue: ChatGPT-4o
+      options:
+        - ChatGPT-4o
+        - Claude
+        - Llama
+        - Mixtral
