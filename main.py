@@ -39,4 +39,5 @@ except ModuleNotFoundError:
     )
 
 from plugin import DuckChatPlugin
+
 DuckChatPlugin().run()

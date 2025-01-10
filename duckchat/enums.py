@@ -13,5 +13,5 @@ class ModelType(Enum):
             "ChatGPT-4o": cls.GPT4o,
             "Claude": cls.Claude,
             "Llama": cls.Llama,
-            "Mixtral": cls.Mixtral
+            "Mixtral": cls.Mixtral,
         }[txt]
