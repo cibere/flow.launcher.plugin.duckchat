@@ -4,7 +4,7 @@ from duckchat.client import DuckChat
 import aiohttp
 from settings import DuckChatSettings
 from duckchat.enums import ModelType
-from .results import QuestionResult
+from results import QuestionResult
 
 
 class DuckChatPlugin(Plugin[DuckChatSettings]):
